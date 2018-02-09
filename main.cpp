@@ -28,7 +28,12 @@ int main() {
 //check in this file, and not the project settings (so if you define the symbol there it will not
 //affect the entire project)
 	
+	
 #ifdef MYSYMBOL
+	//you can look at this source code using the modules view in eclipse
+	//if MYSYMBOL is defined there will be assembly for the following cout
+	//otherwise there is nothing
+
 	cout<<"The value of i is"<<std::to_string(i)<<endl;
 #endif	
 	i++;	
